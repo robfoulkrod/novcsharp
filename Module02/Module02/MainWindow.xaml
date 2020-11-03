@@ -26,10 +26,10 @@
             <CheckBox x:Name="goldMemberCheck" Margin="8" Content="" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.616,1.296"/>
         </Grid>
         <TextBlock x:Name="readoutText" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="772" Height="196"/>
-        <StackPanel Margin="515,70,202,293" Orientation="Vertical">
+        <StackPanel Margin="515,70,175,265" Orientation="Vertical">
 
-            <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="submitButton" Content="Submit"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="submitButton_Click"/>
+            <Button x:Name="clearButton" Content="Clear" VerticalAlignment="Top" Click="clearButton_Click"/>
+            <Button x:Name="submitButton" Content="Submit" VerticalAlignment="Top" Click="submitButton_Click"/>
 
 
         </StackPanel>

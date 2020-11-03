@@ -98,9 +98,17 @@ namespace Module02
                 //}
 
 
-                NewMethod();
+                //Used instead of TryParse to generate Exceptions more easily
+                var participants = int.Parse(participantsText.Text);
+
+                var goldMember = (bool)goldMemberCheck.IsChecked;
+
+                var fee = CalculateFee(participants);
+
+                var message = $"For your {participants} participants you will be charged {fee:c}.";
+                readoutText.Text = message;
             }
-            catch (FormatException)
+            catch(FormatException)
             {
                 readoutText.Text = "Ensure that participants is a whole number.";
             }
@@ -120,18 +128,9 @@ namespace Module02
             }
         }
 
-        private void NewMethod()
-        {
-            //Used instead of TryParse to generate Exceptions more easily
-            var participants = int.Parse(participantsText.Text);
 
-            var goldMember = (bool)goldMemberCheck.IsChecked;
 
-            var fee = CalculateFee(participants);
 
-            var message = $"For your {participants} participants you will be charged {fee:c}.";
-            readoutText.Text = message;
-        }
 
         int Add(int a, int b)
         {
@@ -159,5 +158,9 @@ namespace Module02
             return a + b;
         }
 
+        private void clearButton_Click(object sender, RoutedEventArgs e)
+        {
+            ClearForm();
+        }
     } //end class
 }
