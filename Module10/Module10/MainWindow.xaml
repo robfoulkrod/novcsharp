@@ -1,0 +1,16 @@
+﻿<Window x:Class="Module10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="99,44,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock x:Name="countdownTextBlock" Margin="10,99,10,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="95" FontSize="24" Foreground="#FFD13535" TextAlignment="Center"/>
+        <TextBlock x:Name="readoutTextBlock" HorizontalAlignment="Left" Height="156" Margin="10,253,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="772"/>
+        <Button x:Name="callServiceButton" Content="CallService" HorizontalAlignment="Left" Margin="537,44,0,0" VerticalAlignment="Top" Width="75" Click="callServiceButton_Click"/>
+
+    </Grid>
+</Window>

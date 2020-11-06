@@ -1,0 +1,7 @@
+1	Works on my machine
+2	Is it turned on?
+3	Reboot
+4	Clear your cache
+5	Clear your cache with ctrl + f5
+6	It is working as designed
+7	Is there arror trapping?
